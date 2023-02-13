@@ -1,12 +1,12 @@
+import axios from 'axios';
 import { createApp } from 'vue';
 
 import App from './App.vue';
-import * as filters from './filters';
 import router from './router';
 import store from './store';
 import './style.css';
 
-const app = createApp(App);
-app.use(router).use(store).mount('#app');
+axios.defaults.baseURL = 'http://127.0.0.1:8000/';
 
-app.config.globalProperties.$filters = filters;
+const app = createApp(App);
+app.use(router, axios).use(store).mount('#app');

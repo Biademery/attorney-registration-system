@@ -1,15 +1,32 @@
 import { createStore } from 'vuex';
 
-import * as actions from './actions';
-import * as getters from './getters';
-import * as mutations from './mutations';
-import state from './state';
-
-const store = createStore({
-  state,
-  actions,
-  mutations,
-  getters,
+export default createStore({
+  state: {
+    user: {
+      username: '',
+    },
+    isAuthenticated: false,
+    token: '',
+  },
+  mutations: {
+    initializeStore(state) {
+      if (localStorage.getItem('token')) {
+        state.token = localStorage.getItem('token');
+        state.isAuthenticated = true;
+      } else {
+        state.token = '';
+        state.isAuthenticated = false;
+      }
+    },
+    setToken(state, token) {
+      state.token = token;
+      state.isAuthenticated = true;
+    },
+    removeToken(state) {
+      state.token = '';
+      state.isAuthenticated = false;
+    },
+  },
+  actions: {},
+  modules: {},
 });
-
-export default store;
