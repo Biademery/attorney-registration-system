@@ -1,16 +1,13 @@
 <template>
-<div class="home">
-  <div class="container">
-    <h1 class="title">Adicionar um novo Advogado</h1>
-    <router-link to="/add"><button class="btn">Adicionar</button></router-link>
+  <div class="home">
+    <div class="container">
+      <h1 class="title">Adicionar um novo Advogado</h1>
+      <router-link to="/add"
+        ><button class="btn">Adicionar</button></router-link
+      >
+    </div>
   </div>
-</div>
 </template>
-
-<script>
-export default {
-}
-</script>
 
 <style scoped>
 .home {
@@ -18,7 +15,7 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 15%;
-} 
+}
 
 .container {
   background-color: #eeeeee;

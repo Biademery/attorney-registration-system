@@ -1,7 +1,9 @@
 <template>
   <div>
     <nav class="navbar">
-      <router-link to="/" class="navbar-item"><img src="./assets/icons/home.svg" alt=""></router-link>
+      <router-link to="/" class="navbar-item"
+        ><img src="./assets/icons/home.svg" alt=""
+      /></router-link>
       <router-link to="/add" class="navbar-item">Adicionar</router-link>
       <router-link to="/all" class="navbar-item">Todos Advogados</router-link>
     </nav>
@@ -17,11 +19,11 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 export default {
-  name: 'App',
- }
+  name: "App",
+};
 </script>
 
 <style scoped>
@@ -33,7 +35,7 @@ export default {
   display: flex;
   gap: 20px;
 }
-.navbar-item{
+.navbar-item {
   text-decoration: none;
   color: #212121;
   margin-top: auto;
