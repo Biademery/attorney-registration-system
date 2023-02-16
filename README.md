@@ -1,4 +1,4 @@
-<h1 align="center">Teorema de Pitágoras API</h1>
+<h1 align="center">Attorney Registration System</h1>
 
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -15,7 +15,7 @@
 
 ## 💻 Projeto
 
-Teorema de pitágoras api é o back-end de uma aplicação para calcular os lados de um triângulo retângulo.
+Aplicação para Cadastrar, editar e apagar advogados no sistema.
 
 ## ✨ Tecnologias
 
