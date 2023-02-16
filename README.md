@@ -1,7 +1,103 @@
-# Vue 3 + Vite
+<h1 align="center">Teorema de Pitágoras API</h1>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#%EF%B8%8F-instalando">Instalando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+</p>
 
-## Recommended IDE Setup
+<p align="center">
+  <a href="#-license">
+    <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=4a79a5&labelColor=000000">
+  </a>
+</p>
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 💻 Projeto
+
+Teorema de pitágoras api é o back-end de uma aplicação para calcular os lados de um triângulo retângulo.
+
+## ✨ Tecnologias
+
+Esse projeto foi construido usando as seguintes tecnologias:
+
+- [Vue 3](https://www.vuejs.org/)
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+- [Rest framework](https://www.django-rest-framework.org/)
+
+## ▶️ Instalando
+
+### WEB
+
+É necessário ter o Git, Npm e Vue 3.
+
+1. Clone este repositório:
+
+```sh
+git clone https://github.com/Biademery/pythagoras-theorem-api
+```
+
+2. Entre na pasta web:
+
+```sh
+cd www
+```
+
+3. Instale o npm:
+
+```sh
+npm install
+```
+
+4. Rode o servidor:
+
+```sh
+npm run dev
+```
+
+### API
+
+É necessário ter o Git e Python 3.10.x.
+
+1. Entre na pasta da api
+
+```sh
+cd django-api
+```
+
+2. Inicie o virtual environment:
+
+```sh
+python3 -m venv venv
+```
+
+3. Ative o virtual environment:
+
+```sh
+source venv/bin/activate
+```
+
+4. Instale todas as dependências:
+
+```sh
+pip install -r requirements.txt
+```
+
+6. Migrate para ver se tudo instalou corretamente:
+
+```sh
+python3 manage.py migrate
+```
+
+6. Rode o servidor:
+
+```sh
+python3 manage.py runserver
+```
+
+7. O servidor estará rodando no endereço ` http://127.0.0.1:8000/`
+
+## 📝 Licença
+
+Este projeto este projeto está sobre a MIT license. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
