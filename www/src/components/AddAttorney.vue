@@ -4,24 +4,12 @@
       <h3>Adicionar Advogado</h3>
 
       <div class="form-group">
-        <input
-          type="text"
-          id="name"
-          required
-          v-model="attorney.name"
-          name="name"
-        />
+        <input type="text" id="name" required v-model="attorney.name" name="name" />
         <span>Nome</span>
       </div>
 
       <div class="form-group">
-        <input
-          id="email"
-          type="email"
-          required
-          v-model="attorney.email"
-          name="email"
-        />
+        <input id="email" type="email" required v-model="attorney.email" name="email" />
         <span>E-mail</span>
       </div>
 
@@ -44,7 +32,7 @@ import http from "../http-common.js";
 
 class AttorneyDataService {
   create(data) {
-    return http.post("/api/attorney/", data);
+    return http.post("/attorney/", data);
   }
 }
 export default {
@@ -95,6 +83,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 h3 {
   text-align: center;
   font-size: 20px;
@@ -102,9 +91,11 @@ h3 {
   margin: auto;
   font-weight: 500;
 }
+
 .form-group {
   position: relative;
 }
+
 span {
   position: absolute;
   left: 2px;
@@ -114,12 +105,13 @@ span {
   font-size: 16px;
 }
 
-input:focus ~ span,
-input:valid ~ span {
+input:focus~span,
+input:valid~span {
   transform: translateY(-20px);
   font-size: 12px;
   opacity: 1;
 }
+
 p {
   padding: 10px;
   text-align: center;

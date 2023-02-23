@@ -5,32 +5,17 @@
       <form>
         <div class="form-group">
           <label for="title">Nome</label>
-          <input
-            type="text"
-            class="form-control"
-            id="title"
-            v-model="currentAttorney.name"
-          />
+          <input type="text" class="form-control" id="title" v-model="currentAttorney.name" />
         </div>
 
         <div class="form-group">
           <label for="email">E-mail</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            v-model="currentAttorney.email"
-          />
+          <input type="email" class="form-control" id="email" v-model="currentAttorney.email" />
         </div>
 
         <div class="form-group">
           <label for="description">CNA</label>
-          <input
-            type="text"
-            class="form-control"
-            id="cna"
-            v-model="currentAttorney.cna"
-          />
+          <input type="text" class="form-control" id="cna" v-model="currentAttorney.cna" />
         </div>
       </form>
 
@@ -43,16 +28,16 @@
   </div>
 </template>
   
-  <script>
+<script>
 import http from "../http-common.js";
 
 class AttorneyDataService {
   get(id) {
-    return http.get(`/api/attorney/`);
+    return http.get(`/attorney/`);
   }
 
   update(id, data) {
-    return http.put(`/api/attorney/${id}/`, data);
+    return http.put(`/attorney/${id}/`, data);
   }
 }
 
@@ -119,16 +104,18 @@ export default {
 };
 </script>
   
-  <style scoped>
+<style scoped>
 .edit-form {
   height: calc(100vh - 78px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 label {
   font-size: 12px;
 }
+
 p {
   padding: 10px;
   text-align: center;

@@ -3,12 +3,8 @@
     <div>
       <h4>Todos advogados</h4>
       <ul class="list-group">
-        <li
-          class="list-group-item"
-          v-for="(attorney, index) in attorneys"
-          :key="index"
-          @click="setActiveAttorney(attorney, index)"
-        >
+        <li class="list-group-item" v-for="(attorney, index) in attorneys" :key="index"
+          @click="setActiveAttorney(attorney, index)">
           {{ attorney.name }}
         </li>
       </ul>
@@ -52,15 +48,15 @@ import http from "../http-common.js";
 
 class AttorneyDataService {
   getAll() {
-    return http.get("/api/attorney/");
+    return http.get("/attorney/");
   }
 
   get(id) {
-    return http.get(`/api/attorney/${id}/`);
+    return http.get(`/attorney/${id}/`);
   }
 
   delete(id) {
-    return http.delete(`/api/attorney/${id}/`);
+    return http.delete(`/attorney/${id}/`);
   }
 }
 export default {
@@ -121,11 +117,12 @@ export default {
 };
 </script>
   
-  <style scoped>
+<style scoped>
 .container {
   min-width: 250px;
   min-height: 200px;
 }
+
 .list {
   height: calc(100vh - 78px);
   display: flex;
@@ -134,9 +131,11 @@ export default {
   padding: 20px;
   flex-wrap: wrap;
 }
+
 .input {
   padding: 5px;
 }
+
 li {
   list-style: none;
   font-size: 18px;
@@ -146,12 +145,15 @@ li {
   margin: 10px;
   cursor: pointer;
 }
+
 .buttons {
   text-align: end;
 }
+
 .btn {
   background-color: transparent;
 }
+
 .btn:hover {
   background-color: transparent;
 }
