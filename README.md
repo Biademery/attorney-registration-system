@@ -22,9 +22,8 @@ Aplicação para Cadastrar, editar e apagar advogados no sistema.
 Esse projeto foi construido usando as seguintes tecnologias:
 
 - [Vue 3](https://www.vuejs.org/)
-- [Python](https://www.python.org/)
-- [Django](https://www.djangoproject.com/)
-- [Rest framework](https://www.django-rest-framework.org/)
+- [NPM](https://www.npmjs.com/)
+
 
 ## ▶️ Instalando
 
@@ -55,48 +54,6 @@ npm install
 ```sh
 npm run dev
 ```
-
-### API
-
-É necessário ter o Git e Python 3.10.x.
-
-1. Entre na pasta da api
-
-```sh
-cd django-api
-```
-
-2. Inicie o virtual environment:
-
-```sh
-python3 -m venv venv
-```
-
-3. Ative o virtual environment:
-
-```sh
-source venv/bin/activate
-```
-
-4. Instale todas as dependências:
-
-```sh
-pip install -r requirements.txt
-```
-
-6. Migrate para ver se tudo instalou corretamente:
-
-```sh
-python3 manage.py migrate
-```
-
-6. Rode o servidor:
-
-```sh
-python3 manage.py runserver
-```
-
-7. O servidor estará rodando no endereço ` http://127.0.0.1:8000/`
 
 ## 📝 Licença
 
