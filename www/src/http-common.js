@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://git.heroku.com/intense-wildwood-47079.git/',
+  baseURL: 'https://intense-wildwood-47079-cfbddbbcaa51.herokuapp.com/',
   headers: {
     'Content-type': 'application/json',
   },
