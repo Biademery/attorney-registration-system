@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://aqueous-citadel-59326.herokuapp.com/',
+  baseURL: 'https://git.heroku.com/intense-wildwood-47079.git/',
   headers: {
     'Content-type': 'application/json',
   },
